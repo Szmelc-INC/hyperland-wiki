@@ -31,7 +31,7 @@ The KDE team has implemented a workaround for this called
 [xwaylandvideobridge](https://invent.kde.org/system/xwaylandvideobridge). You
 can use
 [this AUR package](https://aur.archlinux.org/packages/xwaylandvideobridge-git)
-on Arch Linux. Note that Hyprland currently doesn't support the way it tries to
+on Arch Linux. Note that Hyperland currently doesn't support the way it tries to
 hide the main window, so you will have to create some window rules to achieve
 the same effect. See
 [this issue](https://invent.kde.org/system/xwaylandvideobridge/-/issues/1) for

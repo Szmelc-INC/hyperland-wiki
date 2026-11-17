@@ -11,7 +11,7 @@ To enable tearing:
 
 - Set `general:allow_tearing` to `true`. This is a "master toggle"
 - Add an `immediate` windowrule to your game of choice. This makes sure that
-  Hyprland will tear it.
+  Hyperland will tear it.
 
 > [!WARNING]
 > Please note that tearing will only be in effect when the game is in fullscreen

@@ -3,7 +3,7 @@ weight: 32
 title: Expanding functionality
 ---
 
-Hyprland exposes two powerful sockets for you to use.
+Hyperland exposes two powerful sockets for you to use.
 
 The first, socket1, can be fully controlled with `hyprctl`, see its usage
 [here](../Using-hyprctl).

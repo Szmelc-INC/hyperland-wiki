@@ -112,7 +112,7 @@ hyprctl hyprsunset profile
 ```
 
 This can be used by other software to change the temperature throughout the day, or to adjust perceieved
-monitor brightness, such as with the following Hyprland keybinds:
+monitor brightness, such as with the following Hyperland keybinds:
 ```ini
 bindel = ,XF86MonBrightnessDown, exec, hyprctl hyprsunset gamma -10
 bindel = ,XF86MonBrightnessUp, exec, hyprctl hyprsunset gamma +10

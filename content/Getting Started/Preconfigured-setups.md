@@ -3,7 +3,7 @@ weight: 3
 title: Preconfigured setups
 ---
 
-Don't want to spend days tinkering with Hyprland to get it just right from scratch, but you'd
+Don't want to spend days tinkering with Hyperland to get it just right from scratch, but you'd
 rather start from a DE-like setting? You've found the right place.
 
 Here are a few options to consider:
@@ -55,7 +55,7 @@ HyDE dotfiles by HyDE Project are a very popular choice that will suit your need
 
 ## Omarchy
 
-An opinionated Arch + Hyprland Setup by DHH.
+An opinionated Arch + Hyperland Setup by DHH.
 
 [Website](https://omarchy.org/)
 

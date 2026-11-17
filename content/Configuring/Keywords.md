@@ -50,7 +50,7 @@ source = ~/.config/hypr/myColors.conf
 source = ~/.config/hypr/custom/*
 ```
 
-And Hyprland will enter that file and parse it like a Hyprland config.
+And Hyperland will enter that file and parse it like a Hyperland config.
 
 Please note it's LINEAR. Meaning lines above the `source =` will be parsed first,
 then lines inside `~/.config/hypr/myColors.conf`, then lines below.
@@ -58,7 +58,7 @@ then lines inside `~/.config/hypr/myColors.conf`, then lines below.
 ## Gestures
 
 Use [libinput-gestures](https://github.com/bulletmark/libinput-gestures) with
-`hyprctl` if you want to expand Hyprland's gestures beyond what's offered in
+`hyprctl` if you want to expand Hyperland's gestures beyond what's offered in
 [Variables](../Variables).
 
 ## Per-device input configs
@@ -131,7 +131,7 @@ hyprctl -r -- keyword device[my-device]:sensitivity -1
 
 ## Wallpapers
 
-The "Hyprland" background you see when you first start Hyprland is **NOT A
+The "Hyperland" background you see when you first start Hyperland is **NOT A
 WALLPAPER**, it's the default image rendered at the bottom of the render stack.
 
 To set a wallpaper, use a wallpaper utility like
@@ -144,7 +144,7 @@ More can be found in [Useful Utilities](../../Useful-Utilities).
 
 > [!NOTE]
 > A new environment cannot be passed to already running processes. If you change / add / remove an `env = ` entry
-> when Hyprland is running, only newly spawned apps will pick up the changes.
+> when Hyperland is running, only newly spawned apps will pick up the changes.
 
 You can use the `env` keyword to set environment variables,
 e.g:
@@ -161,7 +161,7 @@ envd = XCURSOR_SIZE,24
 ```
 
 > [!WARNING]
-> Hyprland puts the raw string to the env var. You should _not_ add quotes around
+> Hyperland puts the raw string to the env var. You should _not_ add quotes around
 > the values.
 > 
 > e.g.:

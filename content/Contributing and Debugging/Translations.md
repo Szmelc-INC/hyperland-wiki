@@ -2,8 +2,8 @@
 title: Translations
 ---
 
-Some parts of the Hyprland ecosystem are localized. More and more are getting localization
-frameworks. This is a short page showing how to contribute translations to Hyprland apps.
+Some parts of the Hyperland ecosystem are localized. More and more are getting localization
+frameworks. This is a short page showing how to contribute translations to Hyperland apps.
 
 ## Find the translation file
 

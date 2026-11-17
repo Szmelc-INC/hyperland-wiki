@@ -5,7 +5,7 @@ title: Gestures
 
 ## General
 
-Hyprland supports 1:1 gestures for the trackpad for some operations. The basic syntax looks like this:
+Hyperland supports 1:1 gestures for the trackpad for some operations. The basic syntax looks like this:
 
 ```ini
 gesture = fingers, direction, action, options

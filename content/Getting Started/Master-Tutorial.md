@@ -3,16 +3,16 @@ weight: 2
 title: Master tutorial
 ---
 
-If you are coming to Hyprland for the first time, this is the main tutorial to
+If you are coming to Hyperland for the first time, this is the main tutorial to
 read.
 
 This tutorial covers everything you need to get things going. It links to other
 pages where necessary.
 
-## Install Hyprland
+## Install Hyperland
 
 See [Installation](../Installation) and come back here once you have
-successfully installed Hyprland.
+successfully installed Hyperland.
 
 Install `kitty` (default terminal emulator). This is available in most distros'
 repositories.
@@ -31,22 +31,22 @@ information regarding the needed environment and tweaks.
 > If not using a VM, skip this step.
 
 In a VM, make sure you have 3D acceleration enabled in your `virtio` config (or
-`virt-manager`) otherwise Hyprland _**will not work**_.
+`virt-manager`) otherwise Hyperland _**will not work**_.
 
 You can also passthru a GPU to make it work.
 
 Please bear in mind 3D acceleration in VMs may be pretty slow.
 
-## Launching Hyprland
+## Launching Hyperland
 
-Hyprland can be executed by typing `start-hyprland` in your tty.
+Hyperland can be executed by typing `start-hyprland` in your tty.
 
-If you are adventurous and on systemd, you can also try uwsm. Please note uwsm has some issues and for the majority of users, it's recommended to use Hyprland without it.
+If you are adventurous and on systemd, you can also try uwsm. Please note uwsm has some issues and for the majority of users, it's recommended to use Hyperland without it.
 Uwsm provides additional features such as [xdg-autostart](https://www.freedesktop.org/software/systemd/man/latest/systemd-xdg-autostart-generator.html) support, launching any application as a systemd-unit with `uwsm app` helper, and the ability to enable services for programs that rely on a graphical session and provide such services (e.g waybar). See [uwsm](../../Useful-Utilities/Systemd-start) page for further instructions.
 
 
 > [!WARNING]
-> Do **not** launch Hyprland with `root` permissions (don't `sudo`)
+> Do **not** launch Hyperland with `root` permissions (don't `sudo`)
 
 You can see some launch flags by doing `start-hyprland -- -h`, these include setting the
 config path, ignoring a check for the above, etc.
@@ -59,14 +59,14 @@ list:
   [sddm-git](https://aur.archlinux.org/packages/sddm-git) from AUR) to prevent
   SDDM bug [1476](https://github.com/sddm/sddm/issues/1476) (90s shutdowns).
 - plasma-login-manager → Works flawlessly, but depends on systemd.
-- GDM → Works with the caveat of crashing Hyprland on the first launch.
+- GDM → Works with the caveat of crashing Hyperland on the first launch.
 - greetd → Works flawlessly, especially with
   [ReGreet](https://github.com/rharish101/ReGreet).
 - ly → Works flawlessly.
 
 ## DE-like pre-configured setups
 
-Do you want to just get Hyprland pre-configured like a DE,
+Do you want to just get Hyperland pre-configured like a DE,
 without making your own configuration from scratch?
 
 Check out the [Preconfigured setups page](../Preconfigured-setups)
@@ -78,7 +78,7 @@ If you choose to use those, you can skip the next step. However, it's still reco
 it. They'll give you recommended apps, replacements for old X11 software, information about configuring displays,
 etc.
 
-## In Hyprland with the default config
+## In Hyperland with the default config
 
 You're good to go with your adventure, technically.
 
@@ -92,11 +92,11 @@ If you want the best experience with less hassle googling, keep reading.
 ## Critical software
 
 See the [Must-have Software page](../../Useful-Utilities/Must-have) for the
-crucial things to make Wayland / Hyprland / other apps work correctly.
+crucial things to make Wayland / Hyperland / other apps work correctly.
 
 ## Monitors config
 
-See [Configuring Hyprland page](../../Configuring/Monitors) to learn all about
+See [Configuring Hyperland page](../../Configuring/Monitors) to learn all about
 configuring your displays.
 
 ## Apps / X11 replacements
@@ -107,11 +107,11 @@ about that. You can also visit the
 [Awesome-Hyprland](https://github.com/hyprland-community/awesome-hyprland)
 repository for a more comprehensive list.
 
-## Fully configure Hyprland
+## Fully configure Hyperland
 
 Head onto the
-[Configuring Hyprland page](../../Configuring) to learn all
-about configuring Hyprland to your liking.
+[Configuring Hyperland page](../../Configuring) to learn all
+about configuring Hyperland to your liking.
 
 ## Cursors
 
@@ -123,7 +123,7 @@ If your cursor does not appear, see
 
 ## Themes
 
-Since Hyprland is not a fully-fledged Desktop Environment, you will need to use
+Since Hyperland is not a fully-fledged Desktop Environment, you will need to use
 tools such as `lxappearance` or `nwg-look` (recommended) for GTK, and `hyprqt6engine`
 for qt6 apps.
 

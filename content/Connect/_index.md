@@ -18,4 +18,4 @@ Twitter: [x.com/hyprwm](https://x.com/hyprwm)
 ## Other
 
 hyprland.org git instance: [code.hyprland.org](https://code.hyprland.org/)<br/>
-Hyprland website: [hypr.land](https://hypr.land/)<br/>
+Hyperland website: [hypr.land](https://hypr.land/)<br/>

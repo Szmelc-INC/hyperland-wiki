@@ -10,7 +10,7 @@ you stumble upon problems or you do not care that much about animations.
 
 Wayland fractional scaling is a lot better than before, but it is not perfect.
 Some applications do not support it yet or the support is experimental at best.
-If you have problems with your graphics card having high usage or Hyprland
+If you have problems with your graphics card having high usage or Hyperland
 feeling laggy, try setting the scaling to integer numbers such as `1` or `2`
 like in this example `monitor=,preferred,auto,2`.
 
@@ -21,7 +21,7 @@ and/or `INTEL_GPU_MIN_FREQ_ON_BAT` in `/etc/tlp.conf` to something slightly
 higher (e.g. to 500 from 300) will reduce stutter significantly or, in the best
 case, remove it completely.
 
-## How do I make Hyprland draw as little power as possible on my laptop?
+## How do I make Hyperland draw as little power as possible on my laptop?
 
 **_Useful Optimizations_**:
 

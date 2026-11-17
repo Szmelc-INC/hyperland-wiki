@@ -4,7 +4,7 @@ title: Using hyprctl
 ---
 
 `hyprctl` is a utility for controlling some parts of the compositor from a CLI
-or a script. It should automatically be installed along with Hyprland.
+or a script. It should automatically be installed along with Hyperland.
 
 > [!WARNING]
 > _hyprctl_ calls will be dispatched by the compositor _synchronously_, meaning
@@ -109,10 +109,10 @@ used (`HEADLESS-2`, `WL-1`, etc.)
 Available backends:
 
 - `wayland`: Creates an output as a Wayland window. This will only work if
-  you're already running Hyprland with the Wayland backend.
+  you're already running Hyperland with the Wayland backend.
 - `headless`: Creates a headless monitor output. If you're running a VNC/RDP/
   Sunshine server, you should use this.
-- `auto`: Picks a backend for you. For example, if you're running Hyprland from
+- `auto`: Picks a backend for you. For example, if you're running Hyperland from
   the TTY, `headless` will be chosen.
 
 For example, to create a headless output named "test":
@@ -174,7 +174,7 @@ hyprctl switchxkblayout at-translated-set-2-keyboard next
 
 ### seterror
 
-Sets the hyprctl error string. Will reset when Hyprland's config is reloaded.
+Sets the hyprctl error string. Will reset when Hyperland's config is reloaded.
 
 ```sh
 hyprctl seterror 'rgba(66ee66ff)' hello world this is my problem
@@ -203,7 +203,7 @@ Where `window` is as described [here](../Dispatchers#parameter-explanation), and
 
 ### notify
 
-Sends a notification using the built-in Hyprland notification system.
+Sends a notification using the built-in Hyperland notification system.
 
 ```sh
 hyprctl notify [ICON] [TIME_MS] [COLOR] [MESSAGE]

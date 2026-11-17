@@ -3,7 +3,7 @@ weight: 50
 title: Development
 ---
 
-Hyprtoolkit is a pure C++ toolkit. It relies on modern C++ in the Hyprland style (with
+Hyprtoolkit is a pure C++ toolkit. It relies on modern C++ in the Hyperland style (with
 hyprutils, etc).
 
 It's recommended you are familiar with C++ before developing an app.

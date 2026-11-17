@@ -71,7 +71,7 @@ also put your icons and XCursors in both `/usr/share/icons` and `~/.icons`.
 
 ## I Don't Want to Use hyprcursor
 
-If you don't have any hyprcursor themes installed, Hyprland will fall back to XCursor, and use
+If you don't have any hyprcursor themes installed, Hyperland will fall back to XCursor, and use
 whatever you define with `XCURSOR_THEME` and `XCURSOR_SIZE`.
 
 ## My Cursor Is a hyprland Icon?

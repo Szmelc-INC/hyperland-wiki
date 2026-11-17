@@ -6,10 +6,10 @@ title: Start
 The config is located in `$XDG_CONFIG_HOME/hypr/hyprland.conf`. In most cases,
 that maps to `~/.config/hypr/hyprland.conf`.
 
-You can tell Hyprland to use a specific configuration file by using the
+You can tell Hyperland to use a specific configuration file by using the
 `--config` (or `-c`) argument.
 
-Hyprland will automatically generate an example config for you if you don't have
+Hyperland will automatically generate an example config for you if you don't have
 one. You can find an example config
 [here](https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.conf).
 
@@ -23,7 +23,7 @@ Start a section with `name {` and end in `}` **_in separate lines!_**
 
 > [!WARNING]
 > The default config is not complete and does not list all the options / features
-> of Hyprland. Please refer to this wiki page and the pages linked further down
+> of Hyperland. Please refer to this wiki page and the pages linked further down
 > here for full configuration instructions.
 > 
 > **Make sure to read the [Variables](../Variables) page as well**. It covers all
@@ -35,7 +35,7 @@ See the [hyprlang page](../../Hypr-Ecosystem/hyprlang).
 
 ## Basic configuring
 
-To configure Hyprland's options, animations, styling, etc. see
+To configure Hyperland's options, animations, styling, etc. see
 [Variables](../Variables).
 
 ## Advanced configuring

@@ -3,7 +3,7 @@ weight: 30
 title: Permissions
 ---
 
-If you have `hyprland-guiutils` installed, you can make use of Hyprland's built-in
+If you have `hyprland-guiutils` installed, you can make use of Hyperland's built-in
 permission system.
 
 For now, it only has a few permissions, but it might include more in the future.
@@ -11,7 +11,7 @@ For now, it only has a few permissions, but it might include more in the future.
 ## Permissions
 
 Permissions work a bit like Android ones. If an app tries to do something sensitive with
-the compositor (Hyprland), Hyprland will pop up a notification asking you if you
+the compositor (Hyperland), Hyperland will pop up a notification asking you if you
 want to let it do that.
 
 > [!NOTE]
@@ -22,7 +22,7 @@ want to let it do that.
 ### Configuring permissions
 
 > [!IMPORTANT]
-> Permissions set up in the config are **not** reloaded on-the-fly and require a Hyprland
+> Permissions set up in the config are **not** reloaded on-the-fly and require a Hyperland
 > restart for security reasons.
 
 Configuring them is simple:
@@ -47,7 +47,7 @@ Will allow any app whose path starts with `/usr/bin/appsuite-` to capture your s
 
 There are 3 modes:
 - `allow`: Don't ask, just allow the app to proceed.
-- `ask`: Pop up a notification every time the app tries to do something sensitive. These popups allow you to Deny, Allow until the app exits, or Allow until Hyprland exits.
+- `ask`: Pop up a notification every time the app tries to do something sensitive. These popups allow you to Deny, Allow until the app exits, or Allow until Hyperland exits.
 - `deny`: Don't ask, always deny the application access.
 
 

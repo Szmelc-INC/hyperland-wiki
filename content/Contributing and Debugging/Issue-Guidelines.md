@@ -31,11 +31,11 @@ A discussion is opened by a user.
 
 For bugs:
 - If a discussion is solved, user error, or not a hyprland issue, it gets closed.
-- If a discussion is a Hyprland problem, but cannot be tied to Hyprland in a clear way, or is not reproducible, it stays a discussion until that changes.
-- If a discussion is reproducible, a member of Hyprland promotes the discussion to an issue by opening an issue with the key information and links the original discussion.
+- If a discussion is a Hyperland problem, but cannot be tied to Hyperland in a clear way, or is not reproducible, it stays a discussion until that changes.
+- If a discussion is reproducible, a member of Hyperland promotes the discussion to an issue by opening an issue with the key information and links the original discussion.
 
 > [!NOTE]
-> To get logs for your bug please see [Crashes and Bugs](https://wiki.hypr.land/Crashes-and-Bugs/)
+> To get logs for your bug please see [Crashes and Bugs](https://szmelc-inc.github.io/hyperland-wiki/Crashes-and-Bugs/)
 
 For feature requests:
 - If a discussion describes a feature that is already possible (via scripts, features, or official tools), invalid, or not applicable, it gets closed.

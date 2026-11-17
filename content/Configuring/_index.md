@@ -3,7 +3,7 @@ weight: 3
 title: Configuring
 ---
 
-This section is all about the configuring (aka ricing) of your Hyprland experience.
+This section is all about the configuring (aka ricing) of your Hyperland experience.
 It links to other pages where necessary, and will walk you through:
 
 - The config file

@@ -1,16 +1,30 @@
 ---
 cascade:
   type: docs
-title: Hyprland Wiki
+title: Hyperland Wiki
 ---
 
-Hello there, dear traveler! Welcome to the Hyprland Wiki!
+> [!IMPORTANT]
+> **Hyperland is not Hyprland.** Hyperland is an independent fork of **Hyprland v0.54.0**,
+> maintained by [Szmelc-INC](https://github.com/Szmelc-INC). It is not affiliated with, endorsed
+> by or supported by Hyprland Development / hyprwm. Report problems
+> [here](https://github.com/Szmelc-INC/Hyperland/issues), not upstream.
+>
+> "Hyprland" and the Hyprland logo are registered trademarks of Hyprland Development in the
+> European Union; they are mentioned only to say where Hyperland and this wiki come from.
 
-Take a tour of the pages on the left and read ones that you may need.
+Welcome to the Hyperland Wiki!
 
-***This wiki is versioned!*** By default, you are reading the wiki for _the latest Hyprland git commit_.
-Click on the version selector and select your version if you are running a tagged release
-(which you very likely are, you can check with `hyprctl version`).
+This wiki is the Hyprland 0.54.0 wiki, kept and maintained for Hyperland. Everything in it
+applies to Hyperland: the configuration language (hyprlang), options, dispatchers, IPC and
+plugins are those of Hyprland 0.54, and every original name keeps working (`hyprctl` and
+`hyperctl`, `hyprland.conf` and `hyperland.conf`, `HYPRLAND_*` and `HYPERLAND_*`).
+
+**Micro-manifesto:** your config keeps working; nothing is removed just because it is old;
+changes are additive; stability over novelty; pragmatic and logical over fashionable.
+
+Take a tour of the pages on the left and read the ones you need. Check your build with
+`hyperctl version` (or `hyprctl version`).
 
 ## Wayland info (especially useful for Xorg users)
 
@@ -27,4 +41,4 @@ Wayland **compositors** should not be confused with Xorg **window managers**.
 
 If you are having issues, please try [reading the FAQ](../FAQ) and configuring
 sections — chances are your issue is described somewhere there. If not, you can
-try [searching the issues](https://github.com/hyprwm/Hyprland/issues).
+try [searching the issues](https://github.com/Szmelc-INC/Hyperland/issues).

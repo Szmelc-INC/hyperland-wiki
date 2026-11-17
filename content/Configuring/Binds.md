@@ -232,7 +232,7 @@ bindl = , switch:off:[switch name], exec, hyprctl keyword monitor "eDP-1, 2560x1
 ```
 
 > [!WARNING]
-> Systemd `HandleLidSwitch` settings in `logind.conf` may conflict with Hyprland's laptop lid switch configurations.
+> Systemd `HandleLidSwitch` settings in `logind.conf` may conflict with Hyperland's laptop lid switch configurations.
 
 > [!NOTE]
 > You can view your switches with `hyprctl devices`.
@@ -316,7 +316,7 @@ bindm = SUPER, ALT_L, resizewindow
 
 ### Classic
 
-Yes, you heard this right, Hyprland does support global keybinds for _ALL_ apps,
+Yes, you heard this right, Hyperland does support global keybinds for _ALL_ apps,
 including OBS, Discord, Firefox, etc.
 
 See the [`pass`](../Dispatchers/#list-of-dispatchers) and

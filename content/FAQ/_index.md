@@ -16,7 +16,7 @@ or
 
 or sometimes without errors, just crashing at start / randomly
 
-This means that you have built Hyprland yourself and your stack has gotten mismatched. Each hypr* app depends on a bunch of libraries. If you update those libraries, and you don't rebuild the hypr* stack, you will get these errors or crashes.
+This means that you have built Hyperland yourself and your stack has gotten mismatched. Each hypr* app depends on a bunch of libraries. If you update those libraries, and you don't rebuild the hypr* stack, you will get these errors or crashes.
 
 If you want to avoid these errors altogether, _use packages and don't build yourself_. By building yourself, the responsibility for maintaining this consistency falls on **you**!
 
@@ -78,7 +78,7 @@ For Nvidia graphics - This issue appears to be resolved when using Nvidia
 Drivers 525.60.11 or later, but it may persist with older drivers.
 
 For systems with limited hardware (Ex. iGPU, USB-C, USB Hubs) - Set `env = AQ_NO_MODIFIERS,1` in your config.
-To diagnose if you have the exact problem above you can get a [DRM log](https://wiki.hypr.land/Crashes-and-Bugs/#debugging-drm-issues) and look for
+To diagnose if you have the exact problem above you can get a [DRM log](https://szmelc-inc.github.io/hyperland-wiki/Crashes-and-Bugs/#debugging-drm-issues) and look for
 
 ```plain
 Requested display configuration exceeds system DDB limitations
@@ -88,7 +88,7 @@ Outside those, there is a way to fix it that _might_ work for you though:
 
 **Option 1:** Use _only_ the external monitor
 
-By using `AQ_DRM_DEVICES=/dev/dri/card1` (or `card0`) environment variable you can force Hyprland to
+By using `AQ_DRM_DEVICES=/dev/dri/card1` (or `card0`) environment variable you can force Hyperland to
 use only your dGPU, meaning your laptop's screen will be gone but your external
 one will work.
 
@@ -206,11 +206,11 @@ Be aware that they will not prevent tty-changing using Ctrl-Alt-F1...F7.
 See [hyprcursor](../Hypr-Ecosystem/hyprcursor)
 
 1. Set the GTK cursor using [nwg-look](https://github.com/nwg-piotr/nwg-look).
-2. Add `exec-once=hyprctl setcursor [THEME] [SIZE]` to your config and restart Hyprland.
+2. Add `exec-once=hyprctl setcursor [THEME] [SIZE]` to your config and restart Hyperland.
 
 If using flatpak, run `flatpak override --filesystem=~/.themes:ro --filesystem=~/.icons:ro --user` and put your themes in both `/usr/share/themes` and `~/.themes`, and put your icons and cursors in both `/usr/share/icons` and `~/.icons`.
 
-For Qt applications, Hyprland exports XCURSOR_SIZE as 24, which is the default.
+For Qt applications, Hyperland exports XCURSOR_SIZE as 24, which is the default.
 You can overwrite this by exporting XCURSOR_SIZE to a different value with `env`.
 
 You can also try running `gsettings set org.gnome.desktop.interface cursor-theme 'theme-name'` or adding it after `exec-once=` in your config.
@@ -311,7 +311,7 @@ sleep 4
 launched with `exec-once` should fix all issues. Adjust the sleep durations to
 taste.
 
-### How do I export envvars for Hyprland?
+### How do I export envvars for Hyperland?
 
 See [Environment Variables](../Configuring/Environment-variables)
 
@@ -325,7 +325,7 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 
 Setting `misc:middle_click_paste` to `false` disables the feature altogether with the exception of some browsers (notably firefox) having a separate built-in way of emulating that feature which has to be disabled within the browser's settings.
 
-### How do I make Hyprland draw as little power as possible on my laptop?
+### How do I make Hyperland draw as little power as possible on my laptop?
 
 **_Useful Optimizations_**:
 
@@ -344,7 +344,7 @@ You most likely have multiple portal impls / an impl is failing to launch.
 ### My screenshot utilities won't work with multiple screens
 
 Some programs like Flameshot (currently) have limited Wayland support, so on most
-Wayland compositors, you will have to do a few tweaks. For Hyprland, you can add
+Wayland compositors, you will have to do a few tweaks. For Hyperland, you can add
 these window rules to your config to make these programs work with both of your
 screens.
 
@@ -367,9 +367,9 @@ On most laptops, this can be fixed by pressing `FN+SUPER` and verified in `wev`.
 You should be able to hold `SUPER` and not see an instant release event. In case
 `FN+SUPER` doesn't work, consult your laptop's manual.
 
-### My VM doesn't receive keybinds I have set in Hyprland
+### My VM doesn't receive keybinds I have set in Hyperland
 
-This is expected, as Hyprland takes precedence.
+This is expected, as Hyperland takes precedence.
 
 A simple fix is to create an empty "passthrough" submap:
 
@@ -382,7 +382,7 @@ submap = reset
 
 Set `MOD` and `KEY` to desired values.
 
-By pressing the selected combo, you will enter a mode where Hyprland ignores your
+By pressing the selected combo, you will enter a mode where Hyperland ignores your
 keybinds and passes them on to the VM. Pressing `SUPER + Escape` will leave that mode.
 
 ### Some of my drop-down/pop-up windows in apps disappear/don't open at cursor position
@@ -429,7 +429,7 @@ to use the first solution if opening at the cursor position.
 ### Steam's file picker no worky
 
 On instances where you have a Steam library on another drive that you have to
-add, Hyprland's file picker would not normally appear when selecting a directory
+add, Hyperland's file picker would not normally appear when selecting a directory
 from Steam.
 
 Steam has its own file picker, however, it's not functional. Install
@@ -442,7 +442,7 @@ phantom monitor, that causes all sorts of issues, crashes and weird behaviors
 like disappearing workspaces or clients when adding or removing an external
 monitor.
 
-First check the list of monitors detected by Hyprland by running:
+First check the list of monitors detected by Hyperland by running:
 
 ```ini
 hyprctl monitors

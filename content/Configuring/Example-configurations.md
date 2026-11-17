@@ -3,8 +3,8 @@ weight: 37
 title: Example configurations
 ---
 
-This page houses links to a few repositories with beautiful Hyprland
-configurations for you to get inspired from or learn how to configure Hyprland
+This page houses links to a few repositories with beautiful Hyperland
+configurations for you to get inspired from or learn how to configure Hyperland
 from a more tangible example.
 
 > [!WARNING]

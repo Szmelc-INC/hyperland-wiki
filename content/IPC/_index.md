@@ -3,10 +3,10 @@ weight: 9
 title: IPC
 ---
 
-Hyprland exposes 2 UNIX Sockets, for controlling / getting info about Hyprland
+Hyperland exposes 2 UNIX Sockets, for controlling / getting info about Hyperland
 via code / bash utilities.
 
-## Hyprland Instance Signature (HIS)
+## Hyperland Instance Signature (HIS)
 
 ```sh
 echo $HYPRLAND_INSTANCE_SIGNATURE
@@ -20,14 +20,14 @@ Used for hyprctl-like requests. See the
 basically, write `[flag(s)]/command args`.
 
 > [!NOTE]
-> Hyprland evaluates connections to this socket completely synchronously,
-> which means that any unclosed connections *will cause Hyprland to freeze*
+> Hyperland evaluates connections to this socket completely synchronously,
+> which means that any unclosed connections *will cause Hyperland to freeze*
 > until the five-second timeout is reached. Ensure that you always open the socket
 > immediately before writing requests and close it afterward.
 
 ## `$XDG_RUNTIME_DIR/hypr/[HIS]/.socket2.sock`
 
-Used for events. Hyprland will write to each connected client live events like
+Used for events. Hyperland will write to each connected client live events like
 this:
 
 `EVENT>>DATA\n` (`\n` is a linebreak)

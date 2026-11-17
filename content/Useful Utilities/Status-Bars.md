@@ -10,7 +10,7 @@ Typically you'll be able to configure the order and style of widgets with little
 ### Waybar
 
 Waybar is a GTK status bar made specifically for wlroots compositors and
-supports Hyprland by default. To use it, it's recommended to use your distro's
+supports Hyperland by default. To use it, it's recommended to use your distro's
 package.
 
 To start configuring, copy the configuration files from
@@ -25,13 +25,13 @@ For more info regarding configuration, see
 #### How to launch
 
 Type `waybar` into your terminal. In order to have Waybar launch alongside
-Hyprland, add this line to your Hyprland configuration:
+Hyperland, add this line to your Hyperland configuration:
 
 ```ini
 exec-once = waybar
 ```
 
-Waybar also provides a systemd service. If you use Hyprland with [uwsm](../../Useful-Utilities/Systemd-start), you can enable it, using the following command.
+Waybar also provides a systemd service. If you use Hyperland with [uwsm](../../Useful-Utilities/Systemd-start), you can enable it, using the following command.
 
 ```ini
 systemctl --user enable --now waybar.service
@@ -77,7 +77,7 @@ If you are using multiple monitors, you may want to insert the following option:
 
 ### ashell
 
-[ashell](https://malpenzibo.github.io/ashell/) is a ready to go Wayland status bar for Hyprland
+[ashell](https://malpenzibo.github.io/ashell/) is a ready to go Wayland status bar for Hyperland
 
 - Ashell is ready to use out of the box. Just install it, start using it, and customize only what you need.
 - Ashell comes with essential modules like workspaces, time, battery, network, and more. No need to hunt for plugins or write custom scripts.
@@ -157,9 +157,9 @@ It's also highly recommended to read through the
 > [!WARNING]
 > Read
 > [the Wayland section](https://elkowar.github.io/eww/configuration.html#wayland)
-> carefully, otherwise Eww won't work on Hyprland.
+> carefully, otherwise Eww won't work on Hyperland.
 
-Here are some example widgets that might be useful for Hyprland:
+Here are some example widgets that might be useful for Hyperland:
 
 <details>
 <summary>Workspaces widget</summary>
@@ -308,7 +308,7 @@ and a [guided hello world](https://quickshell.outfoxxed.me/docs/configuration/in
 
 ### Blur
 
-Use the `blur` and `ignore_alpha` [layer rules](https://wiki.hypr.land/Configuring/Window-Rules/#layer-rules). 
+Use the `blur` and `ignore_alpha` [layer rules](https://szmelc-inc.github.io/hyperland-wiki/Configuring/Window-Rules/#layer-rules). 
 The former enables blur, and the latter makes it ignore insufficiently opaque regions. 
 Ideally, the value used with `ignore_alpha` is higher than the shadow opacity and lower than the bar/menu content's opacity. 
 Additionally, if it has transparent popups, you can use the `blur_popups` rule.

@@ -259,7 +259,7 @@ The hotkey toggle will be WIN+F1, but you can change this to whatever you want.
 
 ## Zoom
 
-To zoom using Hyprland's built-in zoom utility
+To zoom using Hyperland's built-in zoom utility
 > [!WARNING]
 > If mouse wheel bindings work only for the first time, you should probably reduce reset time with `binds:scroll_event_delay`
 

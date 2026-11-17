@@ -3,11 +3,11 @@ weight: 4
 title: Advanced
 ---
 
-This page documents a few advanced things about the Hyprland Plugin API.
+This page documents a few advanced things about the Hyperland Plugin API.
 
 ## Accessing private members
 
-If you need access to a private member of a Hyprland class, you can surround includes with a macro which will change the visibility to public. Note that some Hyprland files include the STL which may end up breaking if you attempt this. If you encounter this issue, make sure to include the offending STL import before the section where you include the Hyprland file.
+If you need access to a private member of a Hyperland class, you can surround includes with a macro which will change the visibility to public. Note that some Hyperland files include the STL which may end up breaking if you attempt this. If you encounter this issue, make sure to include the offending STL import before the section where you include the Hyperland file.
 
 ```cpp
 #define private public
@@ -22,7 +22,7 @@ If you need access to a private member of a Hyprland class, you can surround inc
 
 > [!WARNING]
 > Function hooks are only available on `AMD64` (`x86_64`). Attempting to hook on
-> any other arch will make Hyprland simply ignore your hooking attempt.
+> any other arch will make Hyperland simply ignore your hooking attempt.
 
 Function hooks are intimidating at first, but when used properly can be
 _extremely_ powerful.
@@ -63,7 +63,7 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
 }
 ```
 
-We have just made a hook. Now, whenever Hyprland calls
+We have just made a hook. Now, whenever Hyperland calls
 `Events::listener_monitorFrame`, our hook will be called instead!
 
 This way, you can run code before / after the function, modify the inputs or
@@ -107,7 +107,7 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
 
 Why use that instead of e.g. `&CCompositor::focusWindow`? Two reasons:
 
-1. Less breakage. Whenever someone updates Hyprland, that address might become
+1. Less breakage. Whenever someone updates Hyperland, that address might become
 invalid. findFunctionsByName is more resilient. As long as the function exists,
 it will be found.
 

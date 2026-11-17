@@ -4,11 +4,11 @@ title: hyprlock
 ---
 
 [hyprlock](https://github.com/hyprwm/hyprlock) is a simple, yet fast, multi-threaded and GPU-accelerated screen lock
-for Hyprland.
+for Hyperland.
 
 > [!WARNING]
 > Hyprlock does not automatically create a config, and without one, hyprlock will _not render anything_.  
-> But even without a config, your session will get locked and thus Hyprland will cover your session with a black screen.  
+> But even without a config, your session will get locked and thus Hyperland will cover your session with a black screen.  
 > You can unlock normally by typing your password followed by hitting Enter, but you won't have any visual feedback.
 > 
 > You can use the example config for a quick start, which can be found [here](https://github.com/hyprwm/hyprlock/blob/main/assets/example.conf).
@@ -35,7 +35,7 @@ Configuration is done via the config file at `~/.config/hypr/hyprlock.conf`. Thi
 
 ### Variable Types
 
-Hyprlock uses the following types in addition to [Hyprland's variable types](../../Configuring/Variables#Variable_types).
+Hyprlock uses the following types in addition to [Hyperland's variable types](../../Configuring/Variables#Variable_types).
 
 | type | description |
 | -- | -- |
@@ -92,7 +92,7 @@ animation = fade, 1, 1.8, linear
 Available animations can be found in the [animation tree](#animation-tree).
 The optional `STYLE` parameter for the `animation` keyword is currently unused by hyprlock.
 
-Check out Hyprland's [animation documentation](../../Configuring/Animations) for more information.
+Check out Hyperland's [animation documentation](../../Configuring/Animations) for more information.
 
 #### Animation Tree
 

@@ -56,24 +56,24 @@ the plugin. Every command will reset the cwd to the repo root.
 ### Commit pins
 
 Commit pins allow you to manage versioning of your plugin. they are pairs of
-`hash,hash`, where the first hash is the Hyprland commit hash, and the second is
+`hash,hash`, where the first hash is the Hyperland commit hash, and the second is
 your plugin's corresponding commit hash.
 
 For example, in the manifest above, `d74607e414dcd16911089a6d4b6aeb661c880923`
-corresponds to Hyprland's `0.33.1` release, which means that if someone is
+corresponds to Hyperland's `0.33.1` release, which means that if someone is
 running `0.33.1`, `hyprpm` will reset your plugin to commit hash
 `efee74a7404495dbda70205824d6e9fc923ccdae`.
 
-It's recommended you add a pin for each Hyprland release. If no pin matches,
+It's recommended you add a pin for each Hyperland release. If no pin matches,
 latest git will be used.
 
 ## Formatting
 
-Although Hyprland plugins obviously are not _required_ to follow Hyprland's
+Although Hyperland plugins obviously are not _required_ to follow Hyperland's
 formatting, naming conventions, etc. it might be a good idea to keep your code
 consistent. See
 [`.clang-format`](https://github.com/hyprwm/Hyprland/blob/main/.clang-format) in
-the Hyprland repo.
+the Hyperland repo.
 
 ## Usage of the API
 
@@ -83,7 +83,7 @@ guaranteed stability as long as the version matches.
 It is, of course, possible to use the internal methods by just including the
 proper headers, but it should not be treated as the default way of doing things.
 
-Hyprland's internal methods may be changed, removed or added without any prior
+Hyperland's internal methods may be changed, removed or added without any prior
 notice. It is worth nothing though that methods that "seem" fundamental, like
 e.g. `focusWindow` or `mouseMoveUnified` probably are, and are unlikely to
 change their general method of functioning.
@@ -99,5 +99,5 @@ Always prefer using Event Hooks.
 ## Threads
 
 The Wayland event loop is strictly single-threaded. It is not recommended to
-create threads in your code, unless they are fully detached from the Hyprland
+create threads in your code, unless they are fully detached from the Hyperland
 process. (e.g. saving a file)

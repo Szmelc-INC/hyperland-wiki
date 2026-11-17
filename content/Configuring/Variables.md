@@ -3,9 +3,9 @@ weight: 2
 title: Variables
 ---
 
-For basic syntax info, see [Configuring Hyprland](..).
+For basic syntax info, see [Configuring Hyperland](..).
 
-This page documents all the "options" of Hyprland. For binds, monitors,
+This page documents all the "options" of Hyperland. For binds, monitors,
 animations, etc. see the sidebar. For anything else, see
 [Keywords](../Keywords).
 
@@ -336,7 +336,7 @@ _Subcategory `group:`_
 | --- | --- | --- | --- |
 | auto_group | whether new windows will be automatically grouped into the focused unlocked group. Note: if you want to disable auto_group only for specific windows, use [the "group barred" window rule](../Window-Rules/#group-window-rule-options) instead. | bool | true |
 | insert_after_current | whether new windows in a group spawn after current or at group tail | bool | true |
-| focus_removed_window | whether Hyprland should focus on the window that has just been moved out of the group | bool | true |
+| focus_removed_window | whether Hyperland should focus on the window that has just been moved out of the group | bool | true |
 | drag_into_group | whether dragging a window into a unlocked group will merge them. Options: 0 (disabled), 1 (enabled), 2 (only when dragging into the groupbar) | int | 1 |
 | merge_groups_on_drag | whether window groups can be dragged into other groups | bool | true |
 | merge_groups_on_groupbar | whether one group will be merged with another when dragged into its groupbar | bool | true |
@@ -393,14 +393,14 @@ _Subcategory `misc:`_
 
 | name | description | type | default |
 |---|---|---|---|
-| disable_hyprland_logo | disables the random Hyprland logo / anime girl background. :( | bool | false |
-| disable_splash_rendering | disables the Hyprland splash rendering. (requires a monitor reload to take effect) | bool | false |
+| disable_hyprland_logo | disables the random Hyperland logo / anime girl background. :( | bool | false |
+| disable_splash_rendering | disables the Hyperland splash rendering. (requires a monitor reload to take effect) | bool | false |
 | disable_scale_notification | disables notification popup when a monitor fails to set a suitable scale | bool | false |
 | col.splash | Changes the color of the splash text (requires a monitor reload to take effect). | color | 0xffffffff |
 | font_family | Set the global default font to render the text including debug fps/notification, config error messages and etc., selected from system fonts. | string | Sans |
 | splash_font_family | Changes the font used to render the splash text, selected from system fonts (requires a monitor reload to take effect). | string | [\[Empty]] |
 | force_default_wallpaper | Enforce any of the 3 default wallpapers. Setting this to `0` or `1` disables the anime background. `-1` means "random". [-1/0/1/2] | int | -1 |
-| vfr | controls the VFR status of Hyprland. Heavily recommended to leave enabled to conserve resources. | bool | true |
+| vfr | controls the VFR status of Hyperland. Heavily recommended to leave enabled to conserve resources. | bool | true |
 | vrr | controls the VRR (Adaptive Sync) of your monitors. 0 - off, 1 - on, 2 - fullscreen only, 3 - fullscreen with `video` or `game` content type [0/1/2/3] | int | 0 |
 | mouse_move_enables_dpms | If DPMS is set to off, wake up the monitors if the mouse moves. | bool | false |
 | key_press_enables_dpms | If DPMS is set to off, wake up the monitors if a key is pressed. | bool | false |
@@ -413,7 +413,7 @@ _Subcategory `misc:`_
 | enable_swallow | Enable window swallowing | bool | false |
 | swallow_regex | The _class_ regex to be used for windows that should be swallowed (usually, a terminal). To know more about the list of regex which can be used [use this cheatsheet](https://github.com/ziishaned/learn-regex/blob/master/README.md). | str | \[\[Empty\]\] |
 | swallow_exception_regex | The _title_ regex to be used for windows that should _not_ be swallowed by the windows specified in swallow_regex  (e.g. wev). The regex is matched against the parent (e.g. Kitty) window's title on the assumption that it changes to whatever process it's running. | str | \[\[Empty\]\] |
-| focus_on_activate | Whether Hyprland should focus an app that requests to be focused (an `activate` request) | bool | false |
+| focus_on_activate | Whether Hyperland should focus an app that requests to be focused (an `activate` request) | bool | false |
 | mouse_move_focuses_monitor | Whether mouse moving into a different monitor should focus it | bool | true |
 | allow_session_lock_restore | if true, will allow you to restart a lockscreen app in case it crashes | bool | false |
 | session_lock_xray | if true, keep rendering workspaces below your lockscreen | bool | false |
@@ -491,7 +491,7 @@ _Subcategory `render:`_
 | xp_mode | Disables back buffer and bottom layer rendering. | bool | false |
 | ctm_animation | Whether to enable a fade animation for CTM changes (hyprsunset). 2 means "auto" which disables them on Nvidia. | int | 2 |
 | cm_fs_passthrough | Passthrough color settings for fullscreen apps when possible. 0 - off, 1 - always, 2 - hdr only | int | 2 |
-| cm_enabled | Whether the color management pipeline should be enabled or not (requires a restart of Hyprland to fully take effect) | bool | true |
+| cm_enabled | Whether the color management pipeline should be enabled or not (requires a restart of Hyperland to fully take effect) | bool | true |
 | send_content_type | Report content type to allow monitor profile autoswitch (may result in a black screen during the switch) | bool | true |
 | cm_auto_hdr | Auto-switch to HDR in fullscreen when needed. 0 - off, 1 - switch to `cm, hdr`, 2 - switch to `cm, hdredid` | int | 1 |
 | new_render_scheduling | Automatically uses triple buffering when needed, improves FPS on underpowered devices. | bool | false |
@@ -565,7 +565,7 @@ _Subcategory `debug:`_
 | disable_time | disables time logging | bool | true |
 | damage_tracking | redraw only the needed bits of the display. Do **not** change. (default: full - 2) monitor - 1, none - 0 | int | 2 |
 | enable_stdout_logs | enables logging to stdout | bool | false |
-| manual_crash | set to 1 and then back to 0 to crash Hyprland. | int | 0 |
+| manual_crash | set to 1 and then back to 0 to crash Hyperland. | int | 0 |
 | suppress_errors | if true, do not display config file parsing errors. | bool | false |
 | watchdog_timeout | sets the timeout in seconds for watchdog to abort processing of a signal of the main thread. Set to 0 to disable. | int | 5 |
 | disable_scale_checks | disables verification of the scale factors. Will result in pixel alignment and rounding errors. | bool | false |

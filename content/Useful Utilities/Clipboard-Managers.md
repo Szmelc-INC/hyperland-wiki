@@ -17,7 +17,7 @@ images and any binary data.
 - [`clipvault`](https://github.com/rolv-apneseth/clipvault) - Utilizes Wayland with `wl-clipboard` and can store text, images and any binary data.  
 Alternative to `cliphist` with a couple extra features (e.g. max age for entries, min/max entry length).
 
-- [`clipse`](https://github.com/savedra1/clipse) - Utilizes Wayland with `wl-clipboard` and supports text and images. Accessible via a TUI that can be bound to a floating window in your Hyprland config. Features include custom themes, image/text previews, multi-select, pinned items, auto-paste, sensitive content handling and more. Example setup in `hyprland.conf`:
+- [`clipse`](https://github.com/savedra1/clipse) - Utilizes Wayland with `wl-clipboard` and supports text and images. Accessible via a TUI that can be bound to a floating window in your Hyperland config. Features include custom themes, image/text previews, multi-select, pinned items, auto-paste, sensitive content handling and more. Example setup in `hyprland.conf`:
 
 - [`copyq`](https://github.com/hluk/CopyQ) - Supports text, images, and various other formats. It offers searchable history, editing capabilities, and a scripting interface. You can also organize items into tabs and synchronize clipboards across different devices.
 

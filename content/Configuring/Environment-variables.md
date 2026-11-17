@@ -22,7 +22,7 @@ env = GTK_THEME,Nord
 ```
 
 > [!WARNING]
-> Note that when using the `env` keyword, Hyprland reads the value of the variable as a **raw string** and puts it into the environment _as is_.  
+> Note that when using the `env` keyword, Hyperland reads the value of the variable as a **raw string** and puts it into the environment _as is_.  
 > You should **NOT** add quotes `""` around the values.
 > 
 > Some examples with differently formatted values:
@@ -51,13 +51,13 @@ env = GTK_THEME,Nord
 > That will cause all sessions (including Xorg ones) to pick up your Wayland-specific
 > environment on traditional Linux distros.
 
-## Hyprland Environment Variables
+## Hyperland Environment Variables
 
 - `HYPRLAND_TRACE=1` - Enables more verbose logging.
-- `HYPRLAND_NO_RT=1` - Disables realtime priority setting by Hyprland.
+- `HYPRLAND_NO_RT=1` - Disables realtime priority setting by Hyperland.
 - `HYPRLAND_NO_SD_NOTIFY=1` - If systemd, disables the `sd_notify` calls.
 - `HYPRLAND_NO_SD_VARS=1` - Disables management of variables in systemd and dbus activation environments.
-- `HYPRLAND_CONFIG` - Specifies where you want your Hyprland configuration.
+- `HYPRLAND_CONFIG` - Specifies where you want your Hyperland configuration.
 
 ## Aquamarine Environment Variables <!-- ref https://github.com/hyprwm/aquamarine/blob/main/docs/env.md -->
 

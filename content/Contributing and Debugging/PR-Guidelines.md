@@ -36,7 +36,7 @@ I've tweaked it so that in 99% of cases you absolutely should fix it.
 
 ### Testing
 
-Please check the [Tests](../Tests) page for information about tests in Hyprland, and related
+Please check the [Tests](../Tests) page for information about tests in Hyperland, and related
 projects.
 
 No test regressions is a _must_, while new tests are _required_ if possible to test (e.g.

@@ -9,7 +9,7 @@ It is not a replacement or competitor to any other wayland compositor library (e
 
 ## Configuration
 
-Configuration options are passed via environment variables starting with `AQ_` to an app that uses aquamarine, e.g. Hyprland.
+Configuration options are passed via environment variables starting with `AQ_` to an app that uses aquamarine, e.g. Hyperland.
 
 ### Variables
 

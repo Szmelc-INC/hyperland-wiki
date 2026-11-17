@@ -3,21 +3,21 @@ weight: 1
 title: Getting started
 ---
 
-This page documents the basics of making your own Hyprland plugin from scratch.
+This page documents the basics of making your own Hyperland plugin from scratch.
 
 ## How do plugins work?
 
-Plugins are basically dynamic objects loaded by Hyprland. They have (almost)
-full access to every part of Hyprland's internal process, and as such, can
+Plugins are basically dynamic objects loaded by Hyperland. They have (almost)
+full access to every part of Hyperland's internal process, and as such, can
 modify and change way more than a script.
 
 ## Prerequisites
 
-In order to write a Hyprland plugin, you will need:
+In order to write a Hyperland plugin, you will need:
 
 - Knowledge of C++
 - The ability to read
-- A rough understanding of the Hyprland internals (you _can_ learn this
+- A rough understanding of the Hyperland internals (you _can_ learn this
   alongside your development work)
 
 ## Making your first plugin
@@ -26,18 +26,18 @@ Open your favorite code editor.
 
 Make a new directory, in this example we will use `MyPlugin`.
 
-_**→ If you have the Hyprland headers**_
+_**→ If you have the Hyperland headers**_
 
 If you install with `make install`, you should have the headers. In that case,
 no further action is required.
 
-_**→ If you don't have the Hyprland source cloned**_
+_**→ If you don't have the Hyperland source cloned**_
 
-Clone the Hyprland source code to a subdirectory, in our example
+Clone the Hyperland source code to a subdirectory, in our example
 `MyPlugin/Hyprland`. Run
 `cd Hyprland && make debug && sudo make installheaders && cd ..`.
 
-Now that you have the Hyprland sources set up, you can either start from scratch
+Now that you have the Hyperland sources set up, you can either start from scratch
 if you know how, or take a look at some simple plugins in the
 [official plugins repo](https://github.com/hyprwm/hyprland-plugins) like for
 example `csgo-vulkan-fix` or `hyprwinwrap`.
@@ -70,7 +70,7 @@ APICALL EXPORT std::string PLUGIN_API_VERSION() {
 }
 ```
 
-This method will tell Hyprland what API version was used to compile this plugin.
+This method will tell Hyperland what API version was used to compile this plugin.
 Do NOT change it. It will be set to the correct value when compiling.
 
 Skipping over some example handlers, we have two important functions:
@@ -111,7 +111,7 @@ function.
 The plugin init function is _required_.
 
 The return value should be the `PLUGIN_DESCRIPTION_INFO` struct which lets
-Hyprland know about your plugin's name, description, author and version.
+Hyperland know about your plugin's name, description, author and version.
 
 Make sure to store your `HANDLE` as it's going to be required for API calls.
 
@@ -122,13 +122,13 @@ If your plugin is being unloaded because it committed a fault, this function
 will _not_ be called.
 
 You do not have to unload layouts, remove config options, remove dispatchers,
-window decorations or unregister hooks in the exit method. Hyprland will do that
+window decorations or unregister hooks in the exit method. Hyperland will do that
 for you.
 
 ### Setting up a development environment
 
 In order to make your life easier, it's a good idea to work on a nested debug
-Hyprland session. Unless you need to test some things that require real hardware
+Hyperland session. Unless you need to test some things that require real hardware
 (e.g. trackpad gestures), you definitely should use a nest.
 
 See

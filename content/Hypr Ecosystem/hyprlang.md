@@ -51,7 +51,7 @@ special {
 ```
 
 This is like defining two "groups", one with the key of A, another with B.  
-Hyprland for example uses those for per-device configs.
+Hyperland for example uses those for per-device configs.
 
 ### Defining variables
 

@@ -3,18 +3,18 @@ title: Plugins
 weight: 6
 ---
 
-Hyprland plugins are managed differently on Nix than on other distros.  
+Hyperland plugins are managed differently on Nix than on other distros.  
 The most notable change is that `hyprpm` is unsupported, but we have our own way of
 building and managing plugins.
 
 > [!WARNING]
-> Using plugins using the syntax below requires you to be using Hyprland through
+> Using plugins using the syntax below requires you to be using Hyperland through
 > the [Home Manager module](../Hyprland-on-Home-Manager) or the
 > [upstream NixOS module](../Hyprland-on-NixOS#upstream-module).
 
 ## Using plugins from Nixpkgs
 
-In Nixpkgs, there are Hyprland plugins packaged for the Hyprland version in
+In Nixpkgs, there are Hyperland plugins packaged for the Hyperland version in
 Nixpkgs. You can use them like this:
 
 ```nix {filename="home.nix"}
@@ -32,7 +32,7 @@ You can find which plugins are included using
 
 Official plugins made/maintained by vaxry.
 
-To use these plugins, it is recommended to be already using the Hyprland
+To use these plugins, it is recommended to be already using the Hyperland
 flake, and **not** the Nixpkgs version.
 
 First, add the flake to your flake inputs:
@@ -52,11 +52,11 @@ First, add the flake to your flake inputs:
 }
 ```
 
-The `inputs.hyprland.follows` line makes hyprland-plugins use the exact Hyprland
+The `inputs.hyprland.follows` line makes hyprland-plugins use the exact Hyperland
 revision you have locked.  
 This means there aren't any version mismatches, as long as you update both inputs at once.
 
-The next step is adding the plugins to Hyprland:
+The next step is adding the plugins to Hyperland:
 
 ```nix {filename="home.nix"}
 {inputs, pkgs, ...}: {

@@ -5,7 +5,7 @@ title: Nvidia
 
 ## Foreword
 
-There is no _official_ Hyprland support for Nvidia hardware. However, many
+There is no _official_ Hyperland support for Nvidia hardware. However, many
 people have had success with the instructions on this page. Please read
 everything in FULL before asking for help.
 
@@ -119,7 +119,7 @@ More information is available
 
 ### Environment variables
 
-Add these variables to your Hyprland config:
+Add these variables to your Hyperland config:
 
 ```ini
 env = LIBVA_DRIVER_NAME,nvidia
@@ -130,11 +130,11 @@ env = __GLX_VENDOR_LIBRARY_NAME,nvidia
 
 Install a few packages to get some apps to function natively with Wayland for
 the best compatibility and performance. See
-[the Master Tutorial](https://wiki.hypr.land/Getting-Started/Master-Tutorial/#force-apps-to-use-wayland).
+[the Master Tutorial](https://szmelc-inc.github.io/hyperland-wiki/Getting-Started/Master-Tutorial/#force-apps-to-use-wayland).
 
 Reboot your computer.
 
-Launch Hyprland.
+Launch Hyperland.
 
 It _should_ work now.
 
@@ -203,7 +203,7 @@ will be given here:
 1. Install the package. On Arch, this is `libva-nvidia-driver` in the official
    repos.
 
-2. Add this variable to your Hyprland config:
+2. Add this variable to your Hyperland config:
    ```ini
    env = NVD_BACKEND,direct
    ```
@@ -230,10 +230,10 @@ If you experience issues with multi-monitor setup on a hybrid graphics device
 Nvidia doesn't support important features for Multi-GPU which can result in a broken or slow setup.
 There are some workarounds to try:
 
-1. Try changing the primary GPU [with the AQ_DRM_DEVICES environment variable](https://wiki.hypr.land/Configuring/Multi-GPU/#telling-hyprland-which-gpu-to-use).
+1. Try changing the primary GPU [with the AQ_DRM_DEVICES environment variable](https://szmelc-inc.github.io/hyperland-wiki/Configuring/Multi-GPU/#telling-hyperland-which-gpu-to-use).
 2. Try setting the environment variable `AQ_FORCE_LINEAR_BLIT=0` to not force linear modifiers on Multi-GPU buffers.
 
-This might slow down rendering to secondary monitors and make Hyprland a bit laggy on them,
+This might slow down rendering to secondary monitors and make Hyperland a bit laggy on them,
 but it's better than not having a secondary monitor at all, and it's the best we can do on Nvidia.
 
 #### Flickering in XWayland games
@@ -275,7 +275,7 @@ For Nix users, the equivalent of the above is
 ```
 
 > [!WARNING]
-> [Loading the Nvidia modules early](https://wiki.hypr.land/Nvidia/#early-kms-modeset-and-fbdev) may cause resuming from hibernation to not work anymore (i.e. the system will just boot instead of resuming).
+> [Loading the Nvidia modules early](https://szmelc-inc.github.io/hyperland-wiki/Nvidia/#early-kms-modeset-and-fbdev) may cause resuming from hibernation to not work anymore (i.e. the system will just boot instead of resuming).
 > If you have issues with that, try disabling early KMS.
 
 > [!WARNING]
@@ -286,5 +286,5 @@ For Nix users, the equivalent of the above is
 ## Still having issues?
 
 If you're still having issues after following this guide, you can join the
-[Hyprland Discord](https://discord.gg/hQ9XvMUjjr) and ask for help in the
+[Hyperland Discord](https://discord.gg/hQ9XvMUjjr) and ask for help in the
 `#hyprland-nvidia` channel.

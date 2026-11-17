@@ -6,7 +6,7 @@ title: Multi-GPU
 ## General
 
 If your host machine uses multiple GPUs, you may want to use one GPU
-for rendering all the elements for Hyprland including windows, animations, and
+for rendering all the elements for Hyperland including windows, animations, and
 another for hardware acceleration for certain applications, etc.
 
 This setup is very common in the likes of gaming laptops, GPU-passthrough
@@ -42,15 +42,15 @@ So from the above outputs, we can see that the path for the AMD card is
 Do not use the `card1` symlink indicated here. It is dynamically assigned at
 boot and is subject to frequent change, making it unsuitable as a marker for GPU selection.
 
-## Telling Hyprland which GPU to use
+## Telling Hyperland which GPU to use
 
 After determining which "card" belongs to which GPU, we can now tell
-Hyprland which GPUs to use by setting the `AQ_DRM_DEVICES` environment variable.
+Hyperland which GPUs to use by setting the `AQ_DRM_DEVICES` environment variable.
 
 > [!NOTE]
 > It is generally a good idea for laptops to use the integrated GPU as the primary
 > renderer as this preserves battery life and is practically indistinguishable
-> from using the dedicated GPU on modern systems in most cases. Hyprland can be
+> from using the dedicated GPU on modern systems in most cases. Hyperland can be
 > run on integrated GPUs just fine. The same principle applies for desktop setups
 > with lower and higher power rating GPUs respectively.
 
@@ -61,7 +61,7 @@ set `AQ_DRM_DEVICES` to a `:`-separated list of card paths, e.g.
 env = AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1
 ```
 
-Here, we tell Hyprland which GPUs it's allowed to use, in order of priority. 
+Here, we tell Hyperland which GPUs it's allowed to use, in order of priority. 
 For example, `card0` will be the primary renderer, but if it isn't available for
 whatever reason, then `card1` is primary.
 
@@ -70,7 +70,7 @@ that card must be included in `AQ_DRM_DEVICES` for the monitor to work, though
 it doesn't have to be the primary renderer.
 
 You should now be able to use an integrated GPU for lighter GPU loads,
-including Hyprland, or default to your dGPU if you prefer.
+including Hyperland, or default to your dGPU if you prefer.
 
 > [!NOTE]
 > [uwsm](../../Useful-Utilities/Systemd-start) users are advised to export the `AQ_DRM_DEVICES` variable inside `~/.config/uwsm/env-hyprland`, instead. 

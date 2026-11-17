@@ -9,31 +9,31 @@ above categories.
 ### Workspace management
 
 [split-monitor-workspaces](https://github.com/Duckonaut/split-monitor-workspaces) by _Stanisław Zagórowski_: Awesome-like
-workspaces for Hyprland.
+workspaces for Hyperland.
 
 ### Window switchers
 
-[snappy-switcher](https://github.com/OpalAayan/snappy-switcher) by _OpalAayan_: A blazing-fast, animated Alt+Tab window switcher for Hyprland written in C (using Pango and Cairo).
+[snappy-switcher](https://github.com/OpalAayan/snappy-switcher) by _OpalAayan_: A blazing-fast, animated Alt+Tab window switcher for Hyperland written in C (using Pango and Cairo).
 
 ### Keyboard layout management
 
 [hyprland-per-window-layout](https://github.com/coffebar/hyprland-per-window-layout/)
 by _MahouShoujoMivutilde and coffebar_: Per window keyboard layouts for
-Hyprland.
+Hyperland.
 
 ### Editor support for config files
 
-[HyprLS](https://github.com/hyprland-community/hyprls) by _gwennlbh_: A LSP server to provide auto-completion and more for Hyprland's configuration files in neovim, VS Code & others
+[HyprLS](https://github.com/hyprland-community/hyprls) by _gwennlbh_: A LSP server to provide auto-completion and more for Hyperland's configuration files in neovim, VS Code & others
 
 ### Keybind Management
 
 [hyprKCS](https://github.com/kosa12/hyprKCS) by _kosa12_: A fast, minimal
-Hyprland keybind manager written in Rust/GTK4.
+Hyperland keybind manager written in Rust/GTK4.
 
 ### IPC wrappers
 
 [hyprland-rs](https://github.com/yavko/hyprland-rs) by _yavko_: A neat wrapper
-for Hyprland's IPC written in Rust.
+for Hyperland's IPC written in Rust.
 
 ### Screen shaders/color temperature
 
@@ -77,7 +77,7 @@ exec-once = udiskie
 ### Monitor configuration
 
 [Monique](https://github.com/ToRvaLDz/monique) by _ToRvaLDz_: Graphical monitor
-configurator for Hyprland and Sway with drag-and-drop layout, profile system,
+configurator for Hyperland and Sway with drag-and-drop layout, profile system,
 and hotplug daemon for automatic configuration.
 
 ### Other useful utilities

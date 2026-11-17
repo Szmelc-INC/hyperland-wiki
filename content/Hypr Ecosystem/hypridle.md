@@ -3,14 +3,14 @@ weight: 4
 title: hypridle
 ---
 
-[hypridle](https://github.com/hyprwm/hypridle) is Hyprland's idle management daemon.
+[hypridle](https://github.com/hyprwm/hypridle) is Hyperland's idle management daemon.
 
 ## Configuration
 
 Configuration is done via the config file at `~/.config/hypr/hypridle.conf`.  
 A config file is required; hypridle won't run without one.  
 To run hypridle at startup, edit `hyprland.conf` and add: `exec-once = hypridle`.  
-If Hyprland is started with [uwsm](../../Useful-Utilities/Systemd-start), you can use `systemctl --user enable --now hypridle.service`.
+If Hyperland is started with [uwsm](../../Useful-Utilities/Systemd-start), you can use `systemctl --user enable --now hypridle.service`.
 
 ### General
 

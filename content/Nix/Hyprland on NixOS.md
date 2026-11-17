@@ -1,9 +1,9 @@
 ---
-title: Hyprland on NixOS
+title: Hyperland on NixOS
 weight: 1
 ---
 
-The NixOS module enables critical components needed to run Hyprland properly,
+The NixOS module enables critical components needed to run Hyperland properly,
 such as polkit,
 [xdg-desktop-portal-hyprland](https://github.com/hyprwm/xdg-desktop-portal-hyprland),
 graphics drivers, fonts, dconf, xwayland, and adding a proper Desktop Entry to
@@ -14,13 +14,13 @@ Make sure to check out the options of the
 
 > [!WARNING]
 > **Required:**
-> - **NixOS Module:** enables critical components needed to run Hyprland properly.  
+> - **NixOS Module:** enables critical components needed to run Hyperland properly.  
 >   Without this, you may have issues with missing session files in your
 >     Display Manager.
 > 
 > **Optional**:
-> - **Home Manager module:** lets you configure Hyprland declaratively through Home Manager.  
-> - Configures Hyprland and adds it to your user's `$PATH`, but
+> - **Home Manager module:** lets you configure Hyperland declaratively through Home Manager.  
+> - Configures Hyperland and adds it to your user's `$PATH`, but
 >     does not make certain system-level changes such as adding a desktop session
 >     file for your display manager.  
 >     This is handled by the NixOS module, once you enable it.
@@ -43,16 +43,16 @@ Make sure to check out the options of the
 }
 ```
 
-This will use the Hyprland version included in the Nixpkgs release you're using.
+This will use the Hyperland version included in the Nixpkgs release you're using.
 
 {{< /tab >}}
 
 {{< tab >}}
 
 > [!NOTE]
-> If you don't want to compile Hyprland yourself, make sure to enable [Cachix](../Cachix).
+> If you don't want to compile Hyperland yourself, make sure to enable [Cachix](../Cachix).
 
-In case you want to use the _development_ version of Hyprland, you can add it like
+In case you want to use the _development_ version of Hyperland, you can add it like
 this:
 
 ```nix {filename="flake.nix"}
@@ -88,10 +88,10 @@ Don't forget to change the `HOSTNAME` to your actual hostname!
 If you are using the Home Manager module, you will need to add these lines there as well/instead
 
 If you start experiencing lag and FPS drops in games or programs like Blender on
-**stable** NixOS when using the Hyprland flake, it is most likely a `mesa`
-version mismatch between your system and Hyprland.
+**stable** NixOS when using the Hyperland flake, it is most likely a `mesa`
+version mismatch between your system and Hyperland.
 
-You can fix this issue by using `mesa` from Hyprland's `nixpkgs` input:
+You can fix this issue by using `mesa` from Hyperland's `nixpkgs` input:
 
 ```nix {filename="configuration.nix"}
 {pkgs, inputs, ...}: let
@@ -115,7 +115,7 @@ For more details, see
 {{< tab "Nix stable" >}}
 
 > [!NOTE]
-> If you don't want to compile Hyprland yourself, make sure to enable [Cachix](../Cachix).
+> If you don't want to compile Hyperland yourself, make sure to enable [Cachix](../Cachix).
 
 ```nix {filename="configuration.nix"}
 {pkgs, ...}: let
@@ -142,7 +142,7 @@ in {
 ## Fixing problems with themes
 
 If your themes for your mouse cursors, icons or windows don't load correctly, see the
-relevant section in [Hyprland on Home Manager](../Hyprland-on-Home-Manager).
+relevant section in [Hyperland on Home Manager](../Hyprland-on-Home-Manager).
 
 If you prefer not to use Home Manager, you can also resolve the issues with GTK
 themes using dconf like so:

@@ -77,7 +77,7 @@ Keep in mind that you _have_ to declare at least one field, but not all.
 
 ### RegEx writing
 
-Please note Hyprland uses [Google's RE2](https://github.com/google/re2) for parsing RegEx. This means that all operations requiring polynomial
+Please note Hyperland uses [Google's RE2](https://github.com/google/re2) for parsing RegEx. This means that all operations requiring polynomial
 time to compute will not work. See the [RE2 wiki](https://github.com/google/re2/wiki/Syntax) for supported extensions.
 
 If you want to _negate_ a RegEx, as in pass only when the RegEx _fails_, you can prefix it with `negative:`, e.g.: `negative:kitty`.
@@ -151,7 +151,7 @@ Dynamic effects are re-evaluated every time a property changes.
 | allows_input | \[on\] | Forces an XWayland window to receive input, even if it requests not to do so. (Might fix issues like Game Launchers not receiving focus for some reason) |
 | dim_around | \[on\] | Dims everything around the window. Please note that this rule is meant for floating windows and using it on tiled ones may result in strange behavior. |
 | decorate | \[on\] | (default is _true_) Whether to draw window decorations or not |
-| focus_on_activate | \[on\] | Whether Hyprland should focus an app that requests to be focused (an `activate` request). |
+| focus_on_activate | \[on\] | Whether Hyperland should focus an app that requests to be focused (an `activate` request). |
 | keep_aspect_ratio | \[on\] | Forces aspect ratio when resizing window with the mouse. |
 | nearest_neighbor | \[on\] | Forces the window to use [nearest neighbor](https://en.wikipedia.org/wiki/Image_scaling#Nearest-neighbor_interpolation) filtering. |
 | no_anim | \[on\] | Disables the animations for the window. |
@@ -164,7 +164,7 @@ Dynamic effects are re-evaluated every time a property changes.
 | no_screen_share | \[on\] | Hides the window and its popups from screen sharing by drawing black rectangles in their place. The rectangles are drawn even if other windows are above. |
 | no_vrr | \[on\] | Disables VRR for the window. Only works when [`misc:vrr`](../Variables/#Misc) is set to `2` or `3`. |
 | opaque | \[on\] |  Forces the window to be opaque. |
-| force_rgbx | \[on\] |  Forces Hyprland to ignore the alpha channel on the whole window's surfaces, effectively making it _actually, fully 100% opaque_. |
+| force_rgbx | \[on\] |  Forces Hyperland to ignore the alpha channel on the whole window's surfaces, effectively making it _actually, fully 100% opaque_. |
 | sync_fullscreen | \[on\] |  Whether the fullscreen mode should always be the same as the one sent to the window (will only take effect on the next fullscreen mode change). |
 | immediate | \[on\] |  Forces the window to allow tearing. See [the Tearing page](../Tearing). |
 | xray | \[on\] |  Sets blur xray mode for the window. |

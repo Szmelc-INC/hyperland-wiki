@@ -3,7 +3,7 @@ title: Contributing and Debugging
 weight: 7
 ---
 
-Everything needed to build and debug Hyprland and other hyprwm programs is
+Everything needed to build and debug Hyperland and other hyprwm programs is
 included inside the provided `devShell`s.
 
 To use it in the cloned repo, simply run `nix develop`.
@@ -22,7 +22,7 @@ program.
 ## Bisecting an issue
 
 Follow the
-[Bisecting an issue](https://wiki.hypr.land/Crashes-and-Bugs/#bisecting-an-issue)
+[Bisecting an issue](https://szmelc-inc.github.io/hyperland-wiki/Crashes-and-Bugs/#bisecting-an-issue)
 guide. To build, run `nix build`.
 
 > [!WARNING]
@@ -36,13 +36,13 @@ To keep a failed build directory, pass the `--keep-failed` flag.
 ## Building the Wayland stack with ASan
 
 Run `nix develop` first, then follow the
-[Building with ASan](https://wiki.hypr.land/Crashes-and-Bugs/#building-the-wayland-stack-with-asan)
+[Building with ASan](https://szmelc-inc.github.io/hyperland-wiki/Crashes-and-Bugs/#building-the-wayland-stack-with-asan)
 guide.
 
 ## Getting a debug stacktrace
 
 Debug stacktraces provide useful info on why a program crashed. To get proper
-stacktraces from Hyprland, make sure it was [built in debug mode](#build-in-debug-mode).
+stacktraces from Hyperland, make sure it was [built in debug mode](#build-in-debug-mode).
 
 After a crash, perform the following steps:
 
@@ -60,7 +60,7 @@ The rest of the process is the same as
 Nix works differently than other build systems, so it has its own abstractions
 over popular build systems such as Meson, CMake and Ninja.
 
-In order to manually build Hyprland, you can run the following commands, while
+In order to manually build Hyperland, you can run the following commands, while
 in the `nix develop` shell.
 
 For CMake:

@@ -1,13 +1,13 @@
 ---
-title: Hyprland on Other Distros
+title: Hyperland on Other Distros
 weight: 4
 ---
 
-If you use Nix on distros other than NixOS, you can still use Hyprland.  
+If you use Nix on distros other than NixOS, you can still use Hyperland.  
 The best option for advanced users would be through [Home Manager](../Hyprland-on-Home-Manager).
 
 However, for most people, Home Manager is too complicated and not worth it outside NixOS. In those cases,
-Hyprland can be installed as a normal package.  
+Hyperland can be installed as a normal package.  
 First, install nix with your system's package manager (usually just called `nix`),
 then [enable flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes), by adding this to `/etc/nix/nix.conf` or `~/.config/nix/nix.conf`:
 
@@ -15,13 +15,13 @@ then [enable flakes](https://nixos.wiki/wiki/Flakes#Enable_flakes), by adding th
 experimental-features = nix-command flakes
 ```
 
-once that is done, install Hyprland through `nix profile`:
+once that is done, install Hyperland through `nix profile`:
 
 {{< tabs items="From Nixpkgs,From the Flake,From hyprnix (Experimental)" >}}
 
 {{< tab "From Nixpkgs" >}}
 
-The easiest method is to get Hyprland directly from Nixpkgs:
+The easiest method is to get Hyperland directly from Nixpkgs:
 
 ```sh
 nix profile install nixpkgs#hyprland
@@ -42,7 +42,7 @@ nix profile install github:hyprwm/Hyprland
 
 {{< tab "From hyprnix (Experimental)" >}}
 
-Installing Hyprland (and other hypr* tools) can be done like so:
+Installing Hyperland (and other hypr* tools) can be done like so:
 ```sh
 nix profile install github:hyprwm/hyprnix#hyprland
 ```
@@ -53,7 +53,7 @@ Replace `#hyprland` with a different app from the flake to install it (e.g. `#hy
 
 {{< /tabs >}}
 
-Since you're using Hyprland outside of NixOS, it won't be able to find graphics
+Since you're using Hyperland outside of NixOS, it won't be able to find graphics
 drivers.  
 To get around that, you can use
 [nixGL](https://github.com/guibou/nixGL).

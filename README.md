@@ -1,39 +1,41 @@
-# Hyprland Wiki
+<div align="center">
 
-Welcome to the Hyprland Wiki! Here we store the wiki pages. They are automatically updated on the
-website whenever a change occurs, within a reasonable timeframe (usually 1–2 minutes).
-You can find the site at [https://wiki.hypr.land/](https://wiki.hypr.land/)
+<img src="static/android-chrome-192x192.png" width="96" alt="Hyperland">
 
-## Contributing to the Wiki
+# Hyperland Wiki
 
-Feel free to open an issue or a PR if you feel anything is necessary.
-Make sure to clearly state the reason for the changes.
+[![Deploy](https://github.com/Szmelc-INC/hyperland-wiki/actions/workflows/pages.yml/badge.svg)](https://github.com/Szmelc-INC/hyperland-wiki/actions/workflows/pages.yml)
+[![License: BSD-3-Clause](https://img.shields.io/badge/license-BSD--3--Clause-105c5c)](LICENSE)
 
-Commits should have the form:
+Documentation for [Hyperland](https://github.com/Szmelc-INC/Hyperland), served at
+**[szmelc-inc.github.io/hyperland-wiki](https://szmelc-inc.github.io/hyperland-wiki/)**.
 
-`Dir/Page: summary of changes`
+</div>
 
-Optionally, you can include a longer commit message 2 lines below the commit
-title.
+> [!IMPORTANT]
+> Hyperland is an **independent fork of Hyprland v0.54.0**, not affiliated with or endorsed by
+> Hyprland Development / hyprwm. This wiki starts from the official Hyprland wiki as it was for
+> the 0.54.0 release and is maintained for Hyperland from there. "Hyprland" and its logo are
+> registered trademarks of Hyprland Development in the EU.
 
-This format makes it easier to glance over the commit list and figure out what
-each commit is about.
+## Contributing
 
-Additionally, if you make many changes in your PR, it is best to squash them
-into self-contained commits that contain one logical change.
+Open an issue or a PR and state the reason for the change. Commit titles use the form
+`Dir/Page: summary of changes`, one logical change per commit.
 
-For info about how to squash commits, see [this](https://stackoverflow.com/a/5189600).
+Hyperland stays compatible with Hyprland 0.54: documentation must keep describing the original
+names (`hyprctl`, `hyprland.conf`, `HYPRLAND_*`) as valid next to the Hyperland ones.
 
 ## Local development
 
-To see your local changes, make sure to have `go` and `hugo` installed. Then, run
+Install `go` and `hugo` (extended), then:
 
 ```sh
-$ hugo serve
+hugo serve
 ```
 
-and open `http://localhost:1313` to see the locally-rendered wiki.
+and open the printed local URL. Every push to `main` deploys to GitHub Pages.
 
 ## License
 
-This repository is licensed under the [BSD 3-Clause License](./LICENSE).
+BSD 3-Clause, see [LICENSE](LICENSE). Original content by the Hyprland wiki contributors.

@@ -12,7 +12,7 @@ For issues, please see
 
 ### Required packages
 
-See [manual build](https://wiki.hypr.land/Getting-Started/Installation/#manual-manual-build) for deps.
+See [manual build](https://szmelc-inc.github.io/hyperland-wiki/Getting-Started/Installation/#manual-manual-build) for deps.
 
 ### Recommended, CMake
 
@@ -26,7 +26,7 @@ With that, you can build in debug, go to the debugging tab and hit
 `(gdb) Launch`.
 
 _note:_ You probably want to set `watchdog_timeout = 0` in the debug {} section
-of your config. Otherwise Hyprland will notice its hanging when you hit a
+of your config. Otherwise Hyperland will notice its hanging when you hit a
 breakpoint and it will crash after you continue out of it.
 
 ### Custom, CLI
@@ -62,17 +62,17 @@ for an override on release / different file.
 
 #### Launch the dev env
 
-Launch the output `Hyprland` binary in `./build/` _when logged into a Hyprland
+Launch the output `Hyprland` binary in `./build/` _when logged into a Hyperland
 session_.
 
-A new window should open with Hyprland running inside of it. You can now test stuff
+A new window should open with Hyperland running inside of it. You can now test stuff
 in the nested session without worrying about nuking your actual
-session, and also being able to debug it easily. I'd also recommend to launch Hyprland
+session, and also being able to debug it easily. I'd also recommend to launch Hyperland
 with some sort of a debugger, like `gdb`. Your IDE (if you use one) can likely do it
 for you, otherwise `gdb ./build/Hyprland` should suffice. This will help you debug
 crashes.
 
-For gdb, when Hyprland crashes, gdb will stop and allow you to inspect the current state
+For gdb, when Hyperland crashes, gdb will stop and allow you to inspect the current state
 with commands like `bt`, `frame`, `print`, etc. An IDE will allow you to do it
 graphically.
 
@@ -91,11 +91,11 @@ on your changes run `git-clang-format` in your projects root directory.
 
 ## Logs, dumps, etc
 
-You can use the logs and the GDB debugger, but running Hyprland in debug compile
+You can use the logs and the GDB debugger, but running Hyperland in debug compile
 as a driver and using it for a while might give more insight to the more random
 bugs.
 
-When Hyprland crashes, use `coredumpctl` and then `coredumpctl info PID` to see
+When Hyperland crashes, use `coredumpctl` and then `coredumpctl info PID` to see
 the dump. See the instructions below for more info about `coredumpctl`.
 
 You can also use the amazing command

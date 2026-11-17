@@ -90,7 +90,7 @@ layout pages (See the sidebar).
 | toggleswallow | If a window is swallowed by the focused window, unswallows it. Execute again to swallow it back | none |
 
 > [!WARNING]
-> [uwsm](../../Useful-Utilities/Systemd-start) users should avoid using `exit` dispatcher, or terminating Hyprland process directly, as exiting Hyprland this way removes it from under its clients and interferes with ordered shutdown sequence. Use `exec, uwsm stop` (or [other variants](https://github.com/Vladimir-csp/uwsm#how-to-stop)) which will gracefully bring down graphical session (and login session bound to it, if any). If you experience problems with units entering inconsistent states, affecting subsequent sessions, use `exec, loginctl terminate-user ""` instead (terminates all units of the user).
+> [uwsm](../../Useful-Utilities/Systemd-start) users should avoid using `exit` dispatcher, or terminating Hyperland process directly, as exiting Hyperland this way removes it from under its clients and interferes with ordered shutdown sequence. Use `exec, uwsm stop` (or [other variants](https://github.com/Vladimir-csp/uwsm#how-to-stop)) which will gracefully bring down graphical session (and login session bound to it, if any). If you experience problems with units entering inconsistent states, affecting subsequent sessions, use `exec, loginctl terminate-user ""` instead (terminates all units of the user).
 > 
 > It's also strongly advised to replace the `exit` dispatcher inside `hyprland.conf` keybinds section accordingly.
 
@@ -104,7 +104,7 @@ layout pages (See the sidebar).
 
 ### Grouped (tabbed) windows
 
-Hyprland allows you to make a group from the current active window with the
+Hyperland allows you to make a group from the current active window with the
 `togglegroup` bind dispatcher.
 
 A group is like i3wm’s “tabbed” container. It takes the space of one window, and
@@ -220,9 +220,9 @@ Some props are expanded from their window rule parents which take multiple argum
 
 `fullscreenstate internal client`
 
-The `fullscreenstate` dispatcher decouples the state that Hyprland maintains for a window from the fullscreen state that is communicated to the client.  
+The `fullscreenstate` dispatcher decouples the state that Hyperland maintains for a window from the fullscreen state that is communicated to the client.  
 
-`internal` is a reference to the state maintained by Hyprland.
+`internal` is a reference to the state maintained by Hyperland.
 
 `client` is a reference to the state that the application receives.
 

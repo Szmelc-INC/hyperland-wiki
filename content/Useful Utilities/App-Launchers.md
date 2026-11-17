@@ -4,7 +4,7 @@ title: App launchers
 ---
 
 ## Hyprlauncher
-Hyprlauncher is a first-party multipurpose and versatile launcher / picker for Hyprland.
+Hyprlauncher is a first-party multipurpose and versatile launcher / picker for Hyperland.
 See its usage and config [here](../../Hypr-Ecosystem/hyprlauncher).
 
 ## Wofi
@@ -22,7 +22,7 @@ bemenu is a Wayland-native replacement for dmenu.
 [GitHub](https://github.com/Cloudef/bemenu).
 
 ## HyprTile
-HyprTile is a Mega-Launcher for Hyprland. Tiny in size, easy to use with nifty features like app grid, very flexible per app configuration, integrated music search, notes system, screenshot and screenrecording for full screen or selected area, system monitor, volume control, starfield background and very nice optics. A ton of features still to come. Everything so simple, you don't need a man page.
+HyprTile is a Mega-Launcher for Hyperland. Tiny in size, easy to use with nifty features like app grid, very flexible per app configuration, integrated music search, notes system, screenshot and screenrecording for full screen or selected area, system monitor, volume control, starfield background and very nice optics. A ton of features still to come. Everything so simple, you don't need a man page.
 
 [HyprTile](https://hyprtile.org/).
 

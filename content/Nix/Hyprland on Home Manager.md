@@ -1,5 +1,5 @@
 ---
-title: Hyprland on Home Manager
+title: Hyperland on Home Manager
 weight: 2
 ---
 
@@ -8,13 +8,13 @@ For a list of available options, check the
 
 > [!WARNING]
 > **Required:**
-> - **NixOS Module:** enables critical components needed to run Hyprland properly.  
+> - **NixOS Module:** enables critical components needed to run Hyperland properly.  
 >   Without this, you may have issues with missing session files in your
 >     Display Manager.
 > 
 > **Optional**:
-> - **Home Manager module:** lets you configure Hyprland declaratively through Home Manager.  
-> - Configures Hyprland and adds it to your user's `$PATH`, but
+> - **Home Manager module:** lets you configure Hyperland declaratively through Home Manager.  
+> - Configures Hyperland and adds it to your user's `$PATH`, but
 >     does not make certain system-level changes such as adding a desktop session
 >     file for your display manager.  
 >     This is handled by the NixOS module, once you enable it.
@@ -39,7 +39,7 @@ For a list of available options, check the
 
 {{< tab "Flakes" >}}
 
-The following snippet of code tries to show how to bring the Hyprland flake from
+The following snippet of code tries to show how to bring the Hyperland flake from
 the flake input and use its packages with Home Manager. Feel free to make any
 adjustment for your setup.
 
@@ -87,7 +87,7 @@ Don't forget to replace `user@hostname` with your username and hostname!
 > It is mainly used as a staging area for new options, so unless you're a tester
 > you should use the downstream Home Manager module.
 
-The following snippet of code tries to show how to bring the Hyprland flake from
+The following snippet of code tries to show how to bring the Hyperland flake from
 the flake input and use the package in the Home Manager option. Feel free to
 make any adjustment for your setup.
 
@@ -114,7 +114,7 @@ in {
 
 ## Usage
 
-Once the module is enabled, you can use it to declaratively configure Hyprland.
+Once the module is enabled, you can use it to declaratively configure Hyperland.
 Here is an example config:
 
 ```nix {filename="home.nix"}
@@ -144,7 +144,7 @@ Here is an example config:
 
 ## Plugins
 
-Hyprland plugins can be added through the `plugins` option:
+Hyperland plugins can be added through the `plugins` option:
 
 ```nix {filename="home.nix"}
 {
@@ -155,7 +155,7 @@ Hyprland plugins can be added through the `plugins` option:
 }
 ```
 
-For examples on how to build Hyprland plugins using Nix, see the
+For examples on how to build Hyperland plugins using Nix, see the
 [Nix/Plugins](../Plugins) page.
 
 ## FAQ
@@ -201,7 +201,7 @@ Example configuration:
 
 ### Using the Home-Manager module with NixOS
 
-If you want to use the Home Manager module while using the Hyprland package you've
+If you want to use the Home Manager module while using the Hyperland package you've
 defined in your NixOS module, you can now do so as long as you're running
 [Home Manager `5dc1c2e40410f7dabef3ba8bf4fdb3145eae3ceb`](https://github.com/nix-community/home-manager/commit/5dc1c2e40410f7dabef3ba8bf4fdb3145eae3ceb)
 or later by setting your `package` and `portalPackage` to `null`.
@@ -217,9 +217,9 @@ or later by setting your `package` and `portalPackage` to `null`.
 }
 ```
 
-Make sure **not** to mix versions of Hyprland and XDPH.
-If your NixOS config uses Hyprland from the flake, you should also use XDPH from the flake.
-If you set the Home Manager Hyprland module package to `null`, you should also set the XDPH package to `null`.
+Make sure **not** to mix versions of Hyperland and XDPH.
+If your NixOS config uses Hyperland from the flake, you should also use XDPH from the flake.
+If you set the Home Manager Hyperland module package to `null`, you should also set the XDPH package to `null`.
 
 ### Programs don't work in systemd services, but do on the terminal
 
@@ -236,7 +236,7 @@ To fix it, add to your config:
 }
 ```
 
-This setting will produce the following entry in the Hyprland config:
+This setting will produce the following entry in the Hyperland config:
 
 ```ini {filename="hyprland.conf"}
 exec-once = dbus-update-activation-environment --systemd --all

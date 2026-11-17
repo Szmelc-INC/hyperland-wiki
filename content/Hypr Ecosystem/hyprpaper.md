@@ -3,7 +3,7 @@ weight: 1
 title: hyprpaper
 ---
 
-[hyprpaper](https://github.com/hyprwm/hyprpaper) is a fast, IPC-controlled wallpaper utility for Hyprland.
+[hyprpaper](https://github.com/hyprwm/hyprpaper) is a fast, IPC-controlled wallpaper utility for Hyperland.
 
 ## Installation
 
@@ -73,7 +73,7 @@ wallpaper {
 ### Run at Startup
 
 To run hyprpaper at startup edit `hyprland.conf` and add: `exec-once = hyprpaper`.  
-If you start Hyprland with [uwsm](../../Useful-Utilities/Systemd-start), you can also use the `systemctl --user enable --now hyprpaper.service` command.
+If you start Hyperland with [uwsm](../../Useful-Utilities/Systemd-start), you can also use the `systemctl --user enable --now hyprpaper.service` command.
 
 ### Misc Options
 

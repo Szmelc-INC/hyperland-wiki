@@ -1,5 +1,5 @@
-baseURL                = "https://wiki.hypr.land/"
-title                  = "Hyprland Wiki"
+baseURL                = "https://szmelc-inc.github.io/hyperland-wiki/"
+title                  = "Hyperland Wiki"
 enableRobotsTXT        = true
 enableGitInfo          = true
 defaultContentLanguage = "en"
@@ -26,24 +26,6 @@ useEmbedded = "fallback"
 noClasses = false
 
 [[menu.main]]
-identifier = "Home"
-name       = "Home"
-url        = "https://hypr.land/"
-weight     = 2
-
-[[menu.main]]
-identifier = "showcase"
-name       = "Showcase"
-url        = "https://hypr.land/hall_of_fame"
-weight     = 3
-
-[[menu.main]]
-identifier = "News"
-name       = "News"
-url        = "https://hypr.land/news"
-weight     = 4
-
-[[menu.main]]
 name   = "Search"
 weight = 5
 [menu.main.params]
@@ -59,18 +41,18 @@ type = "search"
 [[menu.main]]
 name   = "GitHub"
 weight = 7
-url    = "https://github.com/hyprwm/Hyprland"
+url    = "https://github.com/Szmelc-INC/Hyperland"
 [menu.main.params]
 icon = "github"
 
 [params]
-description        = "The documentation for Hyprland."
+description        = "The documentation for Hyperland, an independent fork of Hyprland 0.54."
 displayUpdatedDate = true
 dateFormat         = "January 2, 2006"
-keywords           = ["hyprland", "wiki", "hypr", "land"]
+keywords           = ["hyperland", "hyprland", "wiki", "wayland", "compositor"]
 
 [params.version]
-name       = "Latest git"
+name       = "Hyperland 0.54"
 url        = "/version-selector/"
 outdated   = false  # set for any version that isn't the current one
 version    = ""     # only change when setting the version, otherwise it is "Latest git" by default
@@ -106,7 +88,7 @@ index = "content"
 
 [params.editURL]
 enable = true
-base   = "https://github.com/hyprwm/hyprland-wiki/edit/main/content/"
+base   = "https://github.com/Szmelc-INC/hyperland-wiki/edit/main/content/"
 
 [params.blog.list]
 displayTags = true

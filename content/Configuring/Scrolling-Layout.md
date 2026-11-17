@@ -45,7 +45,7 @@ Dispatcher `layoutmsg` params:
 | swapcol | Swaps the current column with its neighbor to the left (`l`) or right (`r`). The swap wraps around (e.g., swapping the first column left moves it to the end). | `l` or `r` |
 | togglefit | Toggle the focus_fit_method (center, fit) | none |
 
-Example key bindings for your Hyprland config:
+Example key bindings for your Hyperland config:
 
 ```
 bind = $mainMod, period, layoutmsg, move +col

@@ -4,9 +4,9 @@ title: Must have
 ---
 
 This page documents software that is **strongly** recommended to have running
-for a smooth Hyprland experience.
+for a smooth Hyperland experience.
 
-DEs like Plasma or GNOME will take care of this automatically. Hyprland will
+DEs like Plasma or GNOME will take care of this automatically. Hyperland will
 not, as you might want to use something else.
 
 ### A notification daemon
@@ -45,7 +45,7 @@ _Starting method:_ Automatic on systemd, manual otherwise.
 XDG Desktop Portal handles a lot of stuff for your desktop, like file pickers,
 screensharing, etc.
 
-See the [Hyprland Desktop Portal Page.](../../Hypr-Ecosystem/xdg-desktop-portal-hyprland)
+See the [Hyperland Desktop Portal Page.](../../Hypr-Ecosystem/xdg-desktop-portal-hyprland)
 
 ### Authentication Agent
 

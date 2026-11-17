@@ -4,7 +4,7 @@ title: Useful Utilities
 ---
 
 This category is dedicated to short tutorials on how to get useful utilities for
-Hyprland working.
+Hyperland working.
 
 ## List of Pages
 
@@ -26,7 +26,7 @@ Hyprland working.
 
 - **[Clipboard Managers](./Clipboard-Managers)**
 
-- **[Hyprland Desktop Portal](../Hypr-Ecosystem/xdg-desktop-portal-hyprland)**
+- **[Hyperland Desktop Portal](../Hypr-Ecosystem/xdg-desktop-portal-hyprland)**
 
 - **[File Managers](./File-Managers)**
 

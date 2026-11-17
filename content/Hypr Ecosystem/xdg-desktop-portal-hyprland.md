@@ -10,7 +10,7 @@ A portal implements certain functionalities, such as opening file pickers or
 screen sharing.
 
 [xdg-desktop-portal-hyprland](https://github.com/hyprwm/xdg-desktop-portal-hyprland)
-is Hyprland's xdg-desktop-portal implementation. It allows for screensharing,
+is Hyperland's xdg-desktop-portal implementation. It allows for screensharing,
 global shortcuts, etc.
 
 > [!NOTE]
@@ -42,7 +42,7 @@ yay -S xdg-desktop-portal-hyprland-git
 {{< tab "NixOS" >}}
 
 On NixOS, XDPH is already enabled by the
-[NixOS module for Hyprland](../../Nix/Hyprland-on-NixOS), through
+[NixOS module for Hyperland](../../Nix/Hyprland-on-NixOS), through
 `programs.hyprland.enable = true;`.
 
 {{< /tab >}}
@@ -99,14 +99,14 @@ See
 
 ## Usage
 
-XDPH is automatically started by D-Bus, once Hyprland starts.
+XDPH is automatically started by D-Bus, once Hyperland starts.
 
 To check if everything is OK is, try to screenshare anything, or opening OBS and
 select the PipeWire source.  
 If XDPH is running, a Qt menu will pop up asking you what to share.
 
 XDPH will work on other wlroots compositors, but features available only on
-Hyprland will not work (e.g. window sharing).
+Hyperland will not work (e.g. window sharing).
 
 For a nuclear option, you can use this script and `exec-once` it:
 

@@ -7,19 +7,19 @@ weight: 3
 > This page only applies to the flake package.  
 > You can safely skip this if you use the Nixpkgs package.
 
-The Hyprland flake is not built by Hydra, so it is not cached in
+The Hyperland flake is not built by Hydra, so it is not cached in
 [cache.nixos.org], like the rest of Nixpkgs.
 
-Instead of requiring you to build Hyprland (and its dependencies, which may
+Instead of requiring you to build Hyperland (and its dependencies, which may
 include `mesa`, `ffmpeg`, etc), we provide a Cachix cache that you can add to
 your Nix configuration.
 
-The [Hyprland Cachix](https://app.cachix.org/cache/hyprland) exists to cache the
+The [Hyperland Cachix](https://app.cachix.org/cache/hyprland) exists to cache the
 `hyprland` packages and any dependencies not found in [cache.nixos.org].
 
 > [!WARNING]
 > In order for Nix to take advantage of the cache, it has to be enabled **before**
-> using the Hyprland flake package.
+> using the Hyperland flake package.
 
 ```nix {filename="configuration.nix"}
 {
@@ -32,7 +32,7 @@ The [Hyprland Cachix](https://app.cachix.org/cache/hyprland) exists to cache the
 ```
 
 > [!WARNING]
->  Do **not** override Hyprland's `nixpkgs` input
+>  Do **not** override Hyperland's `nixpkgs` input
 > unless you know what you are doing.  
 > Doing so will render the cache useless, since you're building from a different
 > Nixpkgs commit. 

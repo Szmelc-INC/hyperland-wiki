@@ -47,14 +47,14 @@ For more info, read the [option](https://search.nixos.org/options?channel=unstab
 > [!NOTE]
 > For instructions for other distros and manual building, see [building and installing](https://github.com/Vladimir-csp/uwsm?tab=readme-ov-file#installation) section on the project's page.
 
-## Launching Hyprland with uwsm
+## Launching Hyperland with uwsm
 
 > [!NOTE]
 > Pay attention to the warnings in [Environment variables](../../Configuring/Environment-variables), [Multi-GPU](../../Configuring/Multi-GPU) and [Dispatchers](../../Configuring/Dispatchers) sections.
 
 ### In tty
 
-To launch Hyprland with uwsm, add this code in your shell profile.
+To launch Hyperland with uwsm, add this code in your shell profile.
 
 ```
 if uwsm check may-start && uwsm select; then
@@ -64,7 +64,7 @@ fi
 
 This will bring uwsm compositor selection menu after you log in tty1. Choose `Hyprland` entry and you're good to go.
 
-If you want to bypass compositor selection menu and launch Hyprland directly, use this code in your shell profile, instead.
+If you want to bypass compositor selection menu and launch Hyperland directly, use this code in your shell profile, instead.
 
 ```
 if uwsm check may-start; then

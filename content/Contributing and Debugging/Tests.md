@@ -2,7 +2,7 @@
 title: Tests
 ---
 
-Hyprland and some other projects under the hypr* umbrella have _tests_ that
+Hyperland and some other projects under the hypr* umbrella have _tests_ that
 try to catch bugs and regressions before code is merged.
 
 Building in Debug will by default build tests.
@@ -22,7 +22,7 @@ ctest -j$(nproc) -C Debug --test-dir=build
 
 And make sure your tests pass.
 
-### Hyprland's hyprtester
+### Hyperland's hyprtester
 
 A lot of hyprland's code cannot be unit tested, thus we have our own Hyprtester
 binary which runs hyprland and issues commands and expects results.

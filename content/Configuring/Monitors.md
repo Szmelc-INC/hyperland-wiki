@@ -36,14 +36,14 @@ monitor = DP-1, 1920x1080, 0x0, 1
 monitor = DP-2, 1920x1080, 1920x0, 1
 ```
 
-will tell Hyprland to put DP-1 on the _left_ of DP-2, while
+will tell Hyperland to put DP-1 on the _left_ of DP-2, while
 
 ```ini
 monitor = DP-1, 1920x1080, 1920x0, 1
 monitor = DP-2, 1920x1080, 0x0, 1
 ```
 
-will tell Hyprland to put DP-1 on the _right_.
+will tell Hyperland to put DP-1 on the _right_.
 
 The `position` may contain _negative_ values, so the above example could also be
 written as
@@ -53,7 +53,7 @@ monitor = DP-1, 1920x1080, 0x0, 1
 monitor = DP-2, 1920x1080, -1920x0, 1
 ```
 
-Hyprland uses an inverse Y cartesian system. Thus, a negative y coordinate
+Hyperland uses an inverse Y cartesian system. Thus, a negative y coordinate
 places a monitor higher, and a positive y coordinate will place it lower.
 
 For example:
@@ -63,14 +63,14 @@ monitor = DP-1, 1920x1080, 0x0, 1
 monitor = DP-2, 1920x1080, 0x-1080, 1
 ```
 
-will tell Hyprland to put DP-2 _above_ DP-1, while
+will tell Hyperland to put DP-2 _above_ DP-1, while
 
 ```ini
 monitor = DP-1, 1920x1080, 0x0, 1
 monitor = DP-2, 1920x1080, 0x1080, 1
 ```
 
-will tell Hyprland to put DP-2 _below_.
+will tell Hyperland to put DP-2 _below_.
 
 > [!NOTE]
 > The position is calculated with the scaled (and transformed) resolution, meaning
@@ -100,7 +100,7 @@ There are a few special values for the resolutions:
 
 Position also has a few special values:
 
-- `auto` - let Hyprland decide on a position. By default, it places each new monitor to the right of existing ones,
+- `auto` - let Hyperland decide on a position. By default, it places each new monitor to the right of existing ones,
   using the monitor's top left corner as the root point.
 - `auto-right/left/up/down` - place the monitor to the right/left, above or below other monitors,
   also based on each monitor's top left corner as the root.
@@ -112,7 +112,7 @@ be positioned at (0,0). Also, the direction is always from the center out, so yo
 but the left monitors will just be left of the origin and above the origin. You can also specify duplicate directions and
 monitors will continue to go in that direction.
 
-You can also use `auto` as a scale to let Hyprland decide on a scale for you.
+You can also use `auto` as a scale to let Hyperland decide on a scale for you.
 These depend on the PPI of the monitor.
 
 Recommended rule for quickly plugging in random monitors:
@@ -218,7 +218,7 @@ monitor = eDP-1, 2880x1800@90, 0x0, 1, bitdepth, 10
 ```
 
 > [!WARNING]
-> Colors registered in Hyprland (e.g. the border color) do _not_ support
+> Colors registered in Hyperland (e.g. the border color) do _not_ support
 > 10 bit.  
 > Some applications do _not_ support screen capture with 10 bit enabled.
 
